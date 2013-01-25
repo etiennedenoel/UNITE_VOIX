@@ -40,9 +40,10 @@
         <div id="sep"></div>
         <div id="wrapper">
             <section class="page">
-                 <div class="sidebar">
+                <aside class="sidebar">
                     <div class="search">
-                        <input type="text" placeholder="Recherche"><input type="submit" value="" class="subm" />
+                        <label for="search"><h3>Recherche</h3></label>
+                        <input class='input' type="text" name="search" placeholder="Recherche"><input type="submit" value="Ok" class="connex" />
                     </div>
                     <h3>Connexion</h3>
                     <input class ="input" type="text" placeholder="Nom d'utilisateur">
@@ -59,7 +60,7 @@
                         <li>Musée de la musique</li>
                         <li>Etude de la voix à Namur</li>
                     </ul>
-                </div>
+                </aside>
                 <div class="content">
                     <div class="intro">
 
@@ -83,34 +84,49 @@
                                 <li><a href="http://www.ulg.ac.be/cms/c_323017">Stage 2</a></li>
                             </ul>
                     </div>
-                    <div class="formaLien">
+                    <aside class="formaLien">
                         <h4>Liens</h4>
                         <ul>
                             <li class="lien"><a href="http://www.ulg.ac.be/cms/c_323017">Faire un stage à l'ULG</a></li>
                             <li class="lien"><a href="http://www.ulg.ac.be/cms/c_323019/stages-out">Stages à l'étranger</a></li>
                             <li class="lien"><a href="http://www.ecampus.ulg.ac.be/">eCampus</a></li>
                         </ul>
-                    </div>
+                    </aside>
                 </div>
             </section>
         </div>
-        <div class="mid-foot">
+         <footer>
+            <div class="contenu">
+                <section class="plan">
+                    <h4>Plan du site</h4>
+                    <ul>
+                        <li class="home actif"><a href="#">Accueil</a></li>
+                        <li><a href="unite.html">Unité</a></li>
+                        <li><a href="recherches.html">Nos recherches</a></li>
+                        <li><a href="formations.html">Formations</a></li>
+                        <li><a href="stage.html">Stages</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </section>
+                <section class="contact">
+                    <h4>Contact</h4>
+                    <address itemscope="" itemtype="http://schema.org/PostalAddress">
+                        <span itemprop="contactType">Faculté de Psychologie des Sciences de l'Education </span><br>
+                        <span itemprop="street-address">
+                        5, Boulevard du Rectorat</span><br>
+                        <span itemprop="postal-code">4000, </span>
+                        <span itemprop="locality">Liège</span><br>
+                        <span itemprop="country-name">Belgique</span>
+                    </address>
+                </section>
 
-            <div class="w960">
-                <div class="logos">
-                    <img src="../img/ulg2.png" alt="ULG">
-                </div>
-                <div class="footcont">
-                    <p>Faculté de Psychologie des Sciences de l'Education <br>
-5, Boulevard du Rectorat <br>
-4000 Liège <br>
-Belgique</p>
-                </div>
+                <section class="logos">
+                    <h4><img src="./img/ulg2.png" alt="ULG"></h4>
+                    <h4><img src="./img/ulg2.png" alt="ULV"></h4>
+                </section>
+
             </div>
-
-        </div>
-        <footer>
-
+            <div class="copyr">Tous droits réservés</div>
         </footer>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
