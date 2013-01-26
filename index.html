@@ -6,7 +6,6 @@
 
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Unité de Logopédie de la voix</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
@@ -15,8 +14,8 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-         <link href='http://fonts.googleapis.com/css?family=Exo:400,800' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+        <link href='http://fonts.googleapis.com/css?family=Exo:400,800' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -25,9 +24,10 @@
 
         <!-- Add your site or application content here -->
         <header class="page-header">
-            <h1>Unité de logopédie de la Voix</h1>
+            <h1 class="cache">Unité de logopédie de la voix</h1>
             <nav>
                 <ul>
+                    <h2 class="cache">Menu de navigation</h2>
                     <li class="home actif"><a href="#">HOME</a></li>
                     <li><a href="unite.html">UNITE</a></li>
                     <li><a href="recherches.html">NOS RECHERCHES</a></li>
@@ -40,7 +40,7 @@
         </header>
         <section id="banniere">
             <div>
-                <h3><img src="/img/illu.png" alt="ULV - Illustration"/></h3>
+                <h3><img src="/img/illu4.jpg" title="Bannière" alt="ULV - Illustration"/></h3>
             </div>
 
         </section>
@@ -48,9 +48,10 @@
         <div id="wrapper">
             <section class="page">
                 <aside class="sidebar">
+                    <h2 class="cache">Sidebar</h2>
                     <div class="search">
-                        <label for="search"><h3>Recherche</h3></label>
-                        <input class='input' type="text" name="search" placeholder="Recherche"><input type="submit" value="Ok" class="connex" />
+                        <h3><label for="search">Recherche</label></h3>
+                        <input class='input' type="text" name="search" id='search' placeholder="Recherche"><input type="submit" value="Ok" class="connex" />
                     </div>
                     <h3>Connexion</h3>
                     <input class ="input" type="text" placeholder="Nom d'utilisateur">
@@ -69,7 +70,7 @@
                     </ul>
                 </aside>
                 <div class="content">
-                    <h2>L'ULV c'est quoi?</h2>
+                    <h2><img src="./img/logo.png" alt="Unité de logopédie de la voix"></h2>
                     <div class="intro">
                         <p>
                             <strong>L’unité Logopédie de la Voix</strong> est incluse dans le département 1 (Département de psychologie : Cognition et Comportement) de la Faculté de Psychologie et des Sciences de l’Education de l’Université de Liège. Elle est une des finalités de la section logopédie. En effet, la section logopédie de l’ULg comprend 4 finalités à  savoir :
@@ -82,11 +83,11 @@
                         </ol>
                     </div>
                     <div class="historique">
-                        <h4>Création de l'unité</h4>
+                        <h3>Création de l'unité</h3>
 
                         <p>
                             L’unité Logopédie de la voix a vu le jour en octobre 2008.
-                            <br> L’unité a un triple objectif :
+                            <br> L’unité a un triple objectif&nbsp;:
                         </p>
                         <p>
                             Premièrement, <strong>former</strong> de futur(e)s logopèdes  aux rééducations des troubles de la voix parlée et chantée.
@@ -101,9 +102,9 @@
                     <aside class="formaLien">
                         <h4>Liens</h4>
                         <ul>
-                            <li class="lien"><a href="http://www.npla.ulg.ac.be/index.htm">Finalité spécialisée en neuropsychologie du langage et troubles  des apprentissages verbaux</a></li>
-                            <li class="lien"><a href="http://www.logoclinique.ulg.ac.be/"> Finalité spécialisée en langage oral et handicap</a></li>
-                            <li class="lien"><a href="http://www.fapse.ulg.ac.be/cms/c_328124/fr/accueil"> Clinique Psychologique et Logopédie de la Faculté </a></li>
+                            <li class="lien"><a href="http://www.npla.ulg.ac.be/index.htm" title="Lien 2">Finalité spécialisée en neuropsychologie du langage et troubles  des apprentissages verbaux</a></li>
+                            <li class="lien"><a href="http://www.logoclinique.ulg.ac.be/" title="Lien 2"> Finalité spécialisée en langage oral et handicap</a></li>
+                            <li class="lien"><a href="http://www.fapse.ulg.ac.be/cms/c_328124/fr/accueil" title="Lien 2"> Clinique Psychologique et Logopédie de la Faculté </a></li>
                         </ul>
                     </aside>
 
@@ -112,6 +113,7 @@
         </div>
         <footer>
             <div class="contenu">
+
                 <section class="plan">
                     <h4>Plan du site</h4>
                     <ul>
@@ -123,38 +125,28 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </section>
-                <section class="contact">
+                <section class="contact vcard">
                     <h4>Contact</h4>
-                    <address itemscope="" itemtype="http://schema.org/PostalAddress">
-                        <span itemprop="contactType">Faculté de Psychologie des Sciences de l'Education </span><br>
-                        <span itemprop="street-address">
+                    <address itemscope="" itemtype="http://schema.org/PostalAddress"  class="adr">
+                        <span itemprop="contactType"  class="org">Faculté de Psychologie des Sciences de l'Education </span><br>
+                        <span itemprop="street-address" class="streetaddress">
                         5, Boulevard du Rectorat</span><br>
-                        <span itemprop="postal-code">4000, </span>
-                        <span itemprop="locality">Liège</span><br>
-                        <span itemprop="country-name">Belgique</span>
+                        <span itemprop="postal-code" class="postal-code">4000, </span>
+                        <span itemprop="locality" class="locality">Liège</span><br>
+                        <span itemprop="country-name" class="country-name">Belgique</span>
                     </address>
                 </section>
 
                 <section class="logos">
-                    <h4><img src="./img/ulg2.png" alt="ULG"></h4>
+                    <h4><img src="./img/logoReduit.png" alt="ULG"></h4>
                     <h4><img src="./img/ulg2.png" alt="ULV"></h4>
                 </section>
 
             </div>
-            <div class="copyr">Tous droits réservés</div>
+            <div class="copyr">&copy; Tous droits réservés</div>
         </footer>
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
     </body>
 </html>

@@ -5,16 +5,18 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
         <title>Unité de Logopédie de la voix</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link href='http://fonts.googleapis.com/css?family=Exo:400,800' rel='stylesheet' type='text/css'>
+
         <link rel="stylesheet" href="../css/normalize.css">
         <link rel="stylesheet" href="../css/main.css">
-        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+        <link href='http://fonts.googleapis.com/css?family=Exo:400,800' rel='stylesheet' type='text/css'>
+
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -25,25 +27,30 @@
         <header class="page-header">
             <h1>Unité de logopédie de la Voix</h1>
             <nav>
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="./unite.html">UNITE</a></li>
-                <li class="actif"><a href="./recherches.html">NOS RECHERCHES</a></li>
-                <li><a href="./formations.html">FORMATIONS</a></li>
-                <li><a href="./stage.html">STAGE</a></li>
-                <li><a href="./contact.html">CONTACT</a></li>
+                <ul>
+                    <h2 class="cache">Menu de navigation</h2>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="./unite.html">UNITE</a></li>
+                    <li class="actif"><a href="./recherches.html">NOS RECHERCHES</a></li>
+                    <li><a href="./formations.html">FORMATIONS</a></li>
+                    <li><a href="./stage.html">STAGE</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+
             </nav>
 
         </header>
         <section id="banniere">
-
+            <h2 class="cache">Bannière</h2>
         </section>
         <div id="sep"></div>
         <div id="wrapper">
             <section class="page">
                 <aside class="sidebar">
+                    <h2 class="cache">Sidebar</h2>
                     <div class="search">
-                        <label for="search"><h3>Recherche</h3></label>
-                        <input class='input' type="text" name="search" placeholder="Recherche"><input type="submit" value="Ok" class="connex" />
+                        <h3><label for="search">Recherche</label></h3>
+                        <input class='input' type="text" name="search" id='search' placeholder="Recherche"><input type="submit" value="Ok" class="connex" />
                     </div>
                     <h3>Connexion</h3>
                     <input class ="input" type="text" placeholder="Nom d'utilisateur">
@@ -65,24 +72,24 @@
                     <h2>Nos recherches à travers le monde</h2>
                     <div id="gmap"></div>
                     <div class="selectionMap">
-                        <h4>Informations</h4>
+                        <h3>Informations</h3>
                         <div>
                             <h5>Ville sélectionée</h5>
-                            <img src="../img/photoEx.jpg" width="100px">
+                            <img src="../img/photoEx.jpg" alt="John Mcafee" width="100">
                             <p>Nom du collaborateur dans cette vitte</p>
                             <p>Raison de la collaboration</p>
                         </div>
                         <div>
 
 
-                            <img src="../img/photoEx.jpg" width="100px">
+                            <img src="../img/photoEx.jpg" alt="John Mcafee" width="100">
                             <p>Nom du collaborateur dans cette vitte</p>
                             <p>Raison de la collaboration</p>
                         </div>
                     </div>
                     <aside class="agenda">
                         <h4>Prochains événements</h4>
-                        <table>
+                        <table summary="Prochains événements">
                             <tbody>
                                 <tr>
                                     <td class="lieu">
@@ -136,38 +143,29 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </section>
-                <section class="contact">
+               <section class="contact vcard">
                     <h4>Contact</h4>
-                    <address itemscope="" itemtype="http://schema.org/PostalAddress">
-                        <span itemprop="contactType">Faculté de Psychologie des Sciences de l'Education </span><br>
-                        <span itemprop="street-address">
+                    <address itemscope="" itemtype="http://schema.org/PostalAddress"  class="adr">
+                        <span itemprop="contactType"  class="org">Faculté de Psychologie des Sciences de l'Education </span><br>
+                        <span itemprop="street-address" class="streetaddress">
                         5, Boulevard du Rectorat</span><br>
-                        <span itemprop="postal-code">4000, </span>
-                        <span itemprop="locality">Liège</span><br>
-                        <span itemprop="country-name">Belgique</span>
+                        <span itemprop="postal-code" class="postal-code">4000, </span>
+                        <span itemprop="locality" class="locality">Liège</span><br>
+                        <span itemprop="country-name" class="country-name">Belgique</span>
                     </address>
                 </section>
 
                 <section class="logos">
-                    <h4><img src="./img/ulg2.png" alt="ULG"></h4>
+                    <h4><img src="./img/logoReduit.png" alt="ULG"></h4>
                     <h4><img src="./img/ulg2.png" alt="ULV"></h4>
                 </section>
 
             </div>
             <div class="copyr">Tous droits réservés</div>
         </footer>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
         <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
         <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDHJ3p-sn1Y5tJGrzH9MF5cbR5sdsDmhfg&sensor=false"></script>
-        <script src="../js/plugins.js"></script>
         <script src="../js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
     </body>
 </html>
