@@ -18,8 +18,22 @@
             });
 
     };
+    var addMarker = function(){
+    	var $tab = ;
+    	for(var i = 0; i< $tab.length; i++){
+    		var position[i] =  $tab[i].attr( 'data-position' ).split( ',' );
+	    	var marker[i] = new google.maps.Marker({
+	                        map:gmap,
+	                        position[i]: new google.maps.LatLng(parseFloat( position[i][0] ), parseFloat( aMarkerPosition[i][1] )),
+	        });
+    	}
+
+    };
+
+
 $(function(){
     generateMap();
+    addMarker();
 });
 
 }( jQuery ) );

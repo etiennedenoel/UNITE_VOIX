@@ -80,13 +80,14 @@ h1{
 .cache, footer h3{
 	display: none;
 }
-@media screen and (min-width: 960px){
-	body{
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	 	font-size: 16px;
-	 	line-height: 1.8em;
+body{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ 	font-size: 14px;
+ 	line-height: 1.8em;
 
-	}
+}
+@media screen and (min-width: 960px){
+
 
 	#banniere{
 	background: rgb(255,138,0); /* Old browsers */
@@ -161,7 +162,7 @@ h1{
 	 			font-size: 1.6em;
 	 			font-weight: bold;
 	 			color: @noir;
-	 			margin: 0 0 0 0px;
+	 			margin: 40px 0 0 10px;
 	 			padding: 20px 0 10px 10px;
 	 			text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
 	 			letter-spacing: 2px;
@@ -171,7 +172,8 @@ h1{
 	 			display: inline-block;
 
 	 			li{
-	 				font-size: 0.8em;
+
+
 	 				font-weight: bold;
 	 				clear: both;
 	 			}
@@ -187,17 +189,16 @@ h1{
 	 			}
 	 		}
 	 		.search{
-	 			margin: 42px 0 20px;
-
+	 			margin: 40px 0 0 0;
 	 		}
 	 		.input{
-	 			border: 1px solid white;
+	 			text-indent: 10px;
+	 			border: 1px solid @orange;
 	 			-webkit-border-radius: 50px;
 				-moz-border-radius: 50px;
 				border-radius: 50px;
-				box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5) inset, 0px 1px 1px 0px rgba(255, 255, 255, 0.5);
 				background-color: white;
-				width: 190px;
+				width: 80%;
 				height: 15px;
 				font-size: 0.9em;
 				margin-left: 10px;
@@ -207,7 +208,6 @@ h1{
 	 		.subm{
 	 			display: none;
 	 		}
-
 	 		.connex{
 	 			float: right;
 	 			width: 133px;
@@ -218,16 +218,12 @@ h1{
 	 			font-weight: bold;
 	 			text-indent: -40px;
 	 			display: inline-block;
-	 			margin-right: 10px;
+	 			margin-right: 20px;
 	 			margin-bottom: 20px;
 	 		}
 
 	 	}
 
-	}
-
-	#test{
-		position: relative;
 	}
 
 	.page-header{
@@ -250,6 +246,7 @@ h1{
 	 		text-align: center;
 	 		ul{
 	 			height: 100%;
+	 			margin-left: 30px;
 	 		}
 	 		a{
 	 			font-weight: bold;
@@ -273,13 +270,10 @@ h1{
 				border-bottom: 1px solid @noir;
 
 				border-right: 1px solid @gris;
+				&:nth-child(2){
+					border-left: 1px solid @gris;
+				}
 
-			}
-			li:last-child{
-				border-right: none;
-			}
-			li:first-child{
-				margin-left: 0px;
 			}
 			.actif, li:hover{
 				background-color: rgba(255, 255, 255, 0.7);
@@ -327,15 +321,13 @@ h1{
 		}
 		.membres{
 			font-weight: bold;
-			margin: 0;
-			border-bottom: 1px solid @gris;
+			margin: 0 0 50px 0;
 
 			ol {
 				margin: 5px 0 10px 10px;
 				a{
 				text-decoration:  none;
 				color: @orange;
-				font-size: 1.2em;
 				}
 				a:hover{
 					border-bottom: 1px solid @orange;
@@ -394,7 +386,7 @@ h1{
 
 		}
 		h4{
-			font-size: 1.4em;
+			font-size: 1.8em;
 			font-weight: bold;
 			color: @noir;
 			margin-bottom: 10px;
@@ -405,6 +397,7 @@ h1{
 			margin-bottom: 30px;
 			li{
 				margin-bottom: 10px;
+				line-height: 1.4em;
 			}
 			span{
 				font-size: 0.7em;
@@ -425,11 +418,9 @@ h1{
 			border-bottom: 1px solid @orange;
 		}
 		.selectionMap{
-			.column(5);
 			margin-left: 0px;
 			min-height:250px;
 			position: relative;
-			border-right: 1px solid @gris;
 			img{
 				float: left;
 				border: 2px solid @bordure;
@@ -443,29 +434,44 @@ h1{
 				font-size: 1.2em;
 				font-weight: bold;
 				margin-bottom: 10px;
-			}
-			p{
-				font-size: 0.9em;
+				clear: both;
 			}
 			div{
 				display: inline-block;
 				border-bottom: 1px solid @gris;
-				margin: 0 0 20px 0;
+				margin: 0 5% 20px 0;
 				padding-bottom: 5px;
-				width: 100%;
+				width: 45%;
+				float: left;
 			}
-			div:last-child{
-				border-bottom: none;
+		}
+		h5{
+			font-size: 1.2em;
+			clear: both;
+		}
+		.personne{
+			img{
+				float: left;
+				border: 2px solid @bordure;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 5px;
+				box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+				margin-right: 10px;
+			}
+			.nom{
+
+				font-weight: bold;
+				margin-bottom: 10px;
+				float: left;
 			}
 		}
 		.listing{
-			.column(5);
 			margin-left: 0px;
 			min-height:250px;
 			position: relative;
-			border-right: 1px solid @gris;
 			ul{
-				font-size: 0.8em;
+
 			line-height: 14px;
 			}
 
@@ -473,99 +479,20 @@ h1{
 		.intro{
 			padding-bottom: 20px;
 			margin-bottom: 20px;
-			border-bottom: 1px solid @gris;
 			p{
-				margin-bottom: 20px
-			}
-			.pair{
-				background-color: @gris;
-
-			}
-			th{
-				float: left;
-				width: 20%;
-				padding: 0 0 0 10px;
-			}
-			tr{
-				display: inline-block;
-				padding-top: 10px;
-				width: 100%;
-			}
-			td{
-				float: left;
-
-			}
-			table{
-				width: 100%;
-				position: relative;
-				font-size: 0.75em;
-				border: 1px solid @gris;
-				line-height: 2em;
-			}
-			.titre{
-				float: left;
-				font-size: 0.9em;
-				width: 30%;
-			}
-			.mail{
-				float: left;
-				width: 30%;
-				font-size: 0.9em;
-				p{
-					margin-bottom: 0px;
-				}
-				padding-bottom: 10px;
-				font-style: italic;
-			}
-			.telephone{
-				float: left;
-				width: 15%;
-				font-size: 0.9em;
-				p{
-					margin-bottom: 0px;
-				}
-				padding-bottom: 10px;
-			}
-			tbody{
-				display: table-row-group;
-				vertical-align: middle;
-				border-color: inherit;
-
+				border-bottom: 10px;
 			}
 		}
 		h5{
 			font-weight: bold;
 			margin-bottom: 5px;
+			margin-top: 20px;
 			color: @orange;
 		}
-		.formaLien{
-			display: inline-block;
-			width: 270px;
-			li{
-				font-size: 0.8em;
-				margin-bottom: 20px;
-				line-height: 1.2em;
-			}
-			.lien:before{
-				content: ("- ");
-				float: left;
-				margin: 0 10px 20px 0;
-
-			}
-			#gmap{
-				height: 210px;
-			}
-		}
 		.inscription{
-			.column(5);
 			margin-left: 0px;
 			min-height:250px;
 			position: relative;
-			border-right: 1px solid @gris;
-			p, ul{
-				font-size: 0.8em;
-				line-height: 14px;
-			}
 			p{
 				margin-bottom: 20px;
 			}
@@ -578,7 +505,6 @@ h1{
 
 		}
 		.supplement{
-			width: 360px;
 			float: left;
 			margin-left: 0px;
 			padding-right: 20px;
@@ -586,14 +512,15 @@ h1{
 			border-width: border;
 			min-height:250px;
 			position: relative;
-			border-right: 1px solid @gris;
-			p{
-				font-size: 0.8em;
+			h3{
+				margin-top: 20px;
 			}
-
+		}
+		.personne{
+			display: inline-block;
+			margin-right: 20px;
 		}
 		.acces{
-			width: 360px;
 			float: left;
 			margin-left: 0px;
 			padding-right: 20px;
@@ -601,15 +528,14 @@ h1{
 			border-width: border;
 			min-height:250px;
 			position: relative;
-			border-right: 1px solid @gris;
 			color: black;
 
 			p, li{
-				font-size: 0.8em;
 				list-style: none;
 			}
 			ul{
 				padding: 0 0 10px 0;
+				margin-bottom: 20px;
 				border-bottom: 1px solid @gris;
 			}
 			ul:last-child{
@@ -635,8 +561,6 @@ h1{
 
 		}
 		.historique{
-
-			width: 360px;
 			float: left;
 			margin-left: 0px;
 			padding-right: 20px;
@@ -644,10 +568,8 @@ h1{
 			border-width: border;
 			min-height:250px;
 			position: relative;
-			border-right: 1px solid @gris;
 			color: black;
 			p{
-				font-size: 0.8em;
 				margin-bottom: 10px;
 			}
 			img{
@@ -693,8 +615,8 @@ h1{
 					}
 				}
 				h4{
-
-					font-size: 1.2em;
+					font-weight: bold;
+					font-size: 1.4em;
 					font-family: 'Exo', sans-serif;
 					margin-top: 10px;
 				}
@@ -718,6 +640,52 @@ h1{
 
 
 	}
+	.pg, .loco{
+		width: 39%;
+		margin: 3%;
+		float: left;
+		padding: 12px;
+		min-height: 250px;
+		border: 1px solid @gris;
+		address{
+			margin-bottom: 20px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid @gris;
+		}
+		h3{
+			font-size: 1.5em;
+			font-family: 'Exo', sans-serif;
+			margin-top: 10px;
+			color: @orange;
+		}
+		.mail{
+			font-style: italic;
+
+		}
+		p{
+			margin-bottom: 2px !important;
+		}
+
+	}
+	.loco{
+		img{
+			margin: 0 auto;
+			display: block;
+			margin-bottom: 10px;
+		}
+		.infos{
+			margin-top: 20px;
+			font-style: italic;
+			a{
+				display: block;
+				&:hover{
+					border-bottom: none !important;
+				}
+			}
+		}
+	}
+
+
 
 
 }
@@ -749,12 +717,6 @@ h1{
 
 
 @media screen and (min-width: 641px) and (max-width: 959px){
-	body{
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	 	font-size: 14px;
-	 	line-height: 1.8em;
-	}
-
 	#banniere{
 		min-height: 120px;
 		z-index: 99999;
@@ -762,6 +724,7 @@ h1{
 			display: none;
 		}
 	}
+
 	#wrapper{
 	 	width: 100%;
 	 	.page{
@@ -792,7 +755,6 @@ h1{
 	 			display: inline-block;
 
 	 			li{
-	 				font-size: 0.8em;
 	 				font-weight: bold;
 	 				clear: both;
 	 			}
@@ -950,37 +912,7 @@ h1{
 			height: 300px;
 			margin-bottom: 20px;
 		}
-		.agenda{
-			.pair{
-				background-color: @gris;
-			}
-			tr{
-				border-top: 1px solid rgba(0,0,0, 0.1);
-				width: 100%;
-			}
-			td{
-				float: left;
-				padding-left: 10px;
-			}
-			.lieu{
-				font-weight: bold;
-				margin-right: 20px;
-				font-size: 0.70em;
-				width: 30%;
-			}
-			.whatEvent{
-				width: 30%;
-				font-size: 0.75em;
-			}
-			.date{
-				margin-right: 20px;
-				font-size: 0.75em;
-				text-align: center;
-			}
-			table{
-				width: 100%;
-			}
-		}
+
 		h4{
 			font-size: 1.4em;
 			font-weight: bold;
@@ -1046,15 +978,12 @@ h1{
 			}
 		}
 		.listing{
-			width: 57%;
-			margin: 0 10px;
-			float: left;
-			padding-right: 10px;
+
+			margin: 0 0 0 10px;
+
 			min-height:250px;
 			position: relative;
-			border-right: 1px solid @gris;
 			ul{
-				font-size: 0.8em;
 			line-height: 14px;
 			}
 
@@ -1063,105 +992,31 @@ h1{
 			padding-bottom: 20px;
 			margin-bottom: 20px;
 			margin-left: 10px;
-			border-bottom: 1px solid @gris;
+
 			p{
 				margin-bottom: 20px
 			}
-			.pair{
-				background-color: @gris;
 
-			}
-			th{
-				float: left;
-				width: 25%;
-				margin-left: 10px;
-			}
-			tr{
-				display: inline-block;
-				padding-top: 10px;
-				width: 100%;
-			}
-			td{
-				float: left;
-
-			}
-			table{
-				width: 100%;
-				position: relative;
-				font-size: 0.75em;
-				border: 1px solid @gris;
-				line-height: 2em;
-			}
-			.titre{
-				float: left;
-				font-size: 0.9em;
-				width: 40%;
-			}
-			.mail{
-				display: none;
-			}
-			.telephone{
-				float: left;
-				width: 30%;
-				font-size: 0.9em;
-				p{
-					margin-bottom: 0px;
-				}
-				padding-bottom: 10px;
-			}
-			tbody{
-				display: table-row-group;
-				vertical-align: middle;
-				border-color: inherit;
-
-			}
 		}
 		h5{
 			font-weight: bold;
 			margin-bottom: 5px;
 			color: @orange;
 		}
-		.formaLien{
-			display: inline-block;
-			width: 35%;
-			li{
-				font-size: 0.8em;
-				margin-bottom: 20px;
-				line-height: 1.2em;
-			}
-			.lien:before{
-				content: ("-");
-				float: left;
-				margin: 0 10px 20px 0;
 
-			}
-			#gmap{
-				height: 210px;
-				width: 220%;
-				display: none;
-			}
-			.map{
-				display: none;
-			}
-		}
 		.inscription{
-			width: 57%;
 			margin: 0 10px;
-			float: left;
 			padding-right: 10px;
 			min-height:250px;
 			position: relative;
-			border-right: 1px solid @gris;
 			ul{
-				font-size: 0.8em;
-			line-height: 14px;
-			margin: 10px 0 40px 10px;
+				line-height: 14px;
+				margin: 10px 0 40px 10px;
 			}
 
 
 		}
 		.supplement{
-			width: 50%;
 			float: left;
 			margin-left: 0px;
 			padding-right: 20px;
@@ -1169,11 +1024,24 @@ h1{
 			border-width: border;
 			min-height:250px;
 			position: relative;
-			border-right: 1px solid @gris;
-			p{
-				font-size: 0.8em;
+			h3{
+				margin-top: 20px;
+			}
+			h5{
+				margin: 20px 0 10px 0;
 			}
 
+		}
+		.personne{
+			display: inline-block;
+			width: 100%;
+			margin-right: 20px;
+			margin-bottom: 10px;
+			img{
+				float: left;
+				margin-bottom: 20px;
+				margin-right: 10px;
+			}
 		}
 		.acces{
 
@@ -1188,7 +1056,6 @@ h1{
 			color: black;
 
 			p, li{
-				font-size: 0.8em;
 				list-style: none;
 			}
 			ul{
@@ -1218,18 +1085,13 @@ h1{
 
 		}
 		.historique{
-			float: left;
-			width: 50%;
-
 			padding-right: 20px;
 			margin: 0 10px;
 			border-width: border;
 			min-height:250px;
 			position: relative;
-			border-right: 1px solid @gris;
 			color: black;
 			p{
-				font-size: 0.8em;
 				margin-bottom: 10px;
 			}
 			img{
@@ -1280,7 +1142,6 @@ h1{
 				}
 				address{
 					color: @orange;
-					font-size: 0.8em;
 				}
 			}
 
@@ -1299,7 +1160,59 @@ h1{
 
 
 	}
+	.illu{
+		display: none;
+	}
+	.forma{
+		border-bottom: 1px solid @gris;
+		margin-bottom: 20px;
+	}
+	.pg, .loco{
+		width: 90%;
+		margin: 5% 2%;
+		float: left;
+		padding: 12px;
+		min-height: 250px;
+		border: 1px solid @gris;
+		address{
+			width: 100%;
+			margin-bottom: 20px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid @gris;
+		}
+		h3{
+			font-size: 1.5em;
+			font-family: 'Exo', sans-serif;
+			margin-top: 10px;
+			color: @orange;
+		}
+		.mail{
+			width: 100%;
+			font-style: italic;
 
+		}
+		p{
+			margin-bottom: 2px !important;
+		}
+
+	}
+	.loco{
+		img{
+			margin: 0 auto;
+			display: block;
+			margin-bottom: 10px;
+		}
+		.infos{
+			margin-top: 20px;
+			font-style: italic;
+			a{
+				display: block;
+				&:hover{
+					border-bottom: none !important;
+				}
+			}
+		}
+	}
 
 }
 
@@ -1324,12 +1237,9 @@ h1{
 
 
 @media screen and (min-width: 420px) and (max-width: 640px){
-	body{
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	 	font-size: 14px;
-	 	line-height: 1.8em;
+	.illu{
+		display: none;
 	}
-
 	#banniere{
 		display: none;
 	}
@@ -1373,7 +1283,6 @@ h1{
 	 			display: block;
 	 			text-decoration: none;
 	 			line-height: 60px;
-	 			font-size: 0.8em;
 	 			font-family: 'Exo', sans-serif;
 	 		}
 	 		a:hover, li.actif a{
@@ -1411,8 +1320,6 @@ h1{
 		font-weight: bold;
 	}
 	.content{
-
-		float: left;
 		margin: 0 10px;
 		padding-bottom: 60px;
 		h2{
@@ -1452,37 +1359,7 @@ h1{
 			height: 300px;
 			margin-bottom: 20px;
 		}
-		.agenda{
-			.pair{
-				background-color: @gris;
-			}
-			tr{
-				border-top: 1px solid rgba(0,0,0, 0.1);
-				width: 100%;
-			}
-			td{
-				float: left;
-				padding-left: 10px;
-			}
-			.lieu{
-				font-weight: bold;
-				margin-right: 20px;
-				font-size: 0.70em;
-				width: 30%;
-			}
-			.whatEvent{
-				width: 30%;
-				font-size: 0.75em;
-			}
-			.date{
-				margin-right: 20px;
-				font-size: 0.75em;
-				text-align: center;
-			}
-			table{
-				width: 100%;
-			}
-		}
+
 		h4{
 			font-size: 1.4em;
 			font-weight: bold;
@@ -1557,7 +1434,6 @@ h1{
 			position: relative;
 			border-bottom: 1px solid @gris;
 			ul{
-				font-size: 0.8em;
 			line-height: 14px;
 			}
 
@@ -1566,58 +1442,10 @@ h1{
 			padding-bottom: 20px;
 			margin-bottom: 20px;
 			margin-left: 10px;
-			border-bottom: 1px solid @gris;
 			p{
 				margin-bottom: 20px
 			}
-			.pair{
-				background-color: @gris;
 
-			}
-			th{
-				float: left;
-				width: 25%;
-				margin-left: 10px;
-			}
-			tr{
-				display: inline-block;
-				padding-top: 10px;
-				width: 100%;
-			}
-			td{
-				float: left;
-
-			}
-			table{
-				width: 100%;
-				position: relative;
-				font-size: 0.75em;
-				border: 1px solid @gris;
-				line-height: 2em;
-			}
-			.titre{
-				float: left;
-				font-size: 0.9em;
-				width: 40%;
-			}
-			.mail{
-				display: none;
-			}
-			.telephone{
-				float: left;
-				width: 30%;
-				font-size: 0.9em;
-				p{
-					margin-bottom: 0px;
-				}
-				padding-bottom: 10px;
-			}
-			tbody{
-				display: table-row-group;
-				vertical-align: middle;
-				border-color: inherit;
-
-			}
 		}
 		h5{
 			font-weight: bold;
@@ -1629,7 +1457,6 @@ h1{
 			width: 100%;
 			margin: 20px 10px;
 			li{
-				font-size: 0.8em;
 				margin-bottom: 20px;
 				line-height: 1.2em;
 			}
@@ -1657,7 +1484,6 @@ h1{
 			position: relative;
 
 			ul{
-				font-size: 0.8em;
 			line-height: 14px;
 			margin: 10px 0 40px 10px;
 			}
@@ -1665,20 +1491,31 @@ h1{
 
 		}
 		.supplement{
-
 			float: left;
 			margin-left: 0px;
 			padding-right: 20px;
 			margin: 0 10px;
 			border-width: border;
-			border-bottom: 1px solid @gris;
 			min-height:250px;
 			position: relative;
-
-			p{
-				font-size: 0.8em;
+			h3{
+				margin-top: 20px;
+			}
+			h5{
+				margin: 20px 0 10px 0;
 			}
 
+		}
+		.personne{
+			display: inline-block;
+			width: 100%;
+			margin-right: 20px;
+			margin-bottom: 10px;
+			img{
+				float: left;
+				margin-bottom: 20px;
+				margin-right: 10px;
+			}
 		}
 		.acces{
 
@@ -1693,7 +1530,6 @@ h1{
 			color: black;
 
 			p, li{
-				font-size: 0.8em;
 				list-style: none;
 			}
 			ul{
@@ -1733,7 +1569,6 @@ h1{
 			border-bottom: 1px solid @gris;
 			color: black;
 			p{
-				font-size: 0.8em;
 				margin-bottom: 10px;
 			}
 			img{
@@ -1784,7 +1619,7 @@ h1{
 				}
 				address{
 					color: @orange;
-					font-size: 0.8em;
+
 				}
 			}
 
@@ -1803,6 +1638,56 @@ h1{
 
 
 	}
+	.forma{
+		border-bottom: 1px solid @gris;
+		margin-bottom: 20px;
+	}
+	.pg, .loco{
+		width: 90%;
+		margin: 5% 2%;
+		float: left;
+		padding: 12px;
+		min-height: 250px;
+		border: 1px solid @gris;
+		address{
+			width: 100%;
+			margin-bottom: 20px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid @gris;
+		}
+		h3{
+			font-size: 1.5em;
+			font-family: 'Exo', sans-serif;
+			margin-top: 10px;
+			color: @orange;
+		}
+		.mail{
+			width: 100%;
+			font-style: italic;
+
+		}
+		p{
+			margin-bottom: 2px !important;
+		}
+
+	}
+	.loco{
+		img{
+			margin: 0 auto;
+			display: block;
+			margin-bottom: 10px;
+		}
+		.infos{
+			margin-top: 20px;
+			font-style: italic;
+			a{
+				display: block;
+				&:hover{
+					border-bottom: none !important;
+				}
+			}
+		}
+	}
 
 
 }
@@ -1817,12 +1702,16 @@ h1{
 
 
 @media screen and (max-width: 420px){
-	body{
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	 	font-size: 14px;
-	 	line-height: 1.8em;
+	.forma{
+		border-bottom: 1px solid @gris;
+		margin-bottom: 20px;
 	}
-
+	#gmap{
+		display: none;
+	}
+	.illu{
+		display: none;
+	}
 	#banniere{
 		display: none;
 	}
@@ -1849,6 +1738,7 @@ h1{
 			margin: 0 auto;
 			height: 120px;
 			position: relative;
+			font-size: 0.8em;
 	 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 	 		background: url(../img/bg-side.png) repeat;
 	 		border-bottom: 3px solid @noir;
@@ -1863,7 +1753,7 @@ h1{
 	 			display: block;
 	 			text-decoration: none;
 	 			line-height: 60px;
-	 			font-size: 0.8em;
+
 	 			font-family: 'Exo', sans-serif;
 	 		}
 	 		a:hover, li.actif a{
@@ -1934,14 +1824,7 @@ h1{
 		}
 
 
-		#gmap{
-			border-width: border;
-			width: 100%;
-			border: 3px solid @gris;
-			display: inline-block;
-			height: 300px;
-			margin-bottom: 20px;
-		}
+
 		.agenda{
 			.pair{
 				background-color: @gris;
@@ -2047,7 +1930,7 @@ h1{
 			position: relative;
 			border-bottom: 1px solid @gris;
 			ul{
-				font-size: 0.8em;
+
 			line-height: 14px;
 			}
 
@@ -2056,58 +1939,10 @@ h1{
 			padding-bottom: 20px;
 			margin-bottom: 20px;
 			margin-left: 10px;
-			border-bottom: 1px solid @gris;
 			p{
 				margin-bottom: 20px
 			}
-			.pair{
-				background-color: @gris;
 
-			}
-			th{
-				float: left;
-				width: 25%;
-				margin-left: 10px;
-			}
-			tr{
-				display: inline-block;
-				padding-top: 10px;
-				width: 100%;
-			}
-			td{
-				float: left;
-
-			}
-			table{
-				width: 100%;
-				position: relative;
-				font-size: 0.75em;
-				border: 1px solid @gris;
-				line-height: 2em;
-			}
-			.titre{
-				float: left;
-				font-size: 0.9em;
-				width: 40%;
-			}
-			.mail{
-				display: none;
-			}
-			.telephone{
-				float: left;
-				width: 30%;
-				font-size: 0.9em;
-				p{
-					margin-bottom: 0px;
-				}
-				padding-bottom: 10px;
-			}
-			tbody{
-				display: table-row-group;
-				vertical-align: middle;
-				border-color: inherit;
-
-			}
 		}
 		h5{
 			font-weight: bold;
@@ -2147,7 +1982,7 @@ h1{
 			position: relative;
 
 			ul{
-				font-size: 0.8em;
+
 			line-height: 14px;
 			margin: 10px 0 40px 10px;
 			}
@@ -2155,20 +1990,31 @@ h1{
 
 		}
 		.supplement{
-
 			float: left;
 			margin-left: 0px;
 			padding-right: 20px;
 			margin: 0 10px;
 			border-width: border;
-			border-bottom: 1px solid @gris;
 			min-height:250px;
 			position: relative;
-
-			p{
-
+			h3{
+				margin-top: 20px;
+			}
+			h5{
+				margin: 20px 0 10px 0;
 			}
 
+		}
+		.personne{
+			display: inline-block;
+			width: 100%;
+			margin-right: 20px;
+			margin-bottom: 10px;
+			img{
+				float: left;
+				margin-bottom: 20px;
+				margin-right: 10px;
+			}
 		}
 		.acces{
 
@@ -2183,7 +2029,6 @@ h1{
 			color: black;
 
 			p, li{
-				font-size: 0.8em;
 				list-style: none;
 			}
 			ul{
@@ -2288,6 +2133,52 @@ h1{
 
 
 	}
+	.pg, .loco{
+		width: 90%;
+		margin: 5% 2%;
+		float: left;
+		padding: 12px;
+		min-height: 250px;
+		border: 1px solid @gris;
+		address{
+			width: 100%;
+			margin-bottom: 20px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid @gris;
+		}
+		h3{
+			font-size: 1.5em;
+			font-family: 'Exo', sans-serif;
+			margin-top: 10px;
+			color: @orange;
+		}
+		.mail{
+			width: 100%;
+			font-style: italic;
+
+		}
+		p{
+			margin-bottom: 2px !important;
+		}
+
+	}
+	.loco{
+		img{
+			margin: 0 auto;
+			display: block;
+			margin-bottom: 10px;
+		}
+		.infos{
+			margin-top: 20px;
+			font-style: italic;
+			a{
+				display: block;
+				&:hover{
+					border-bottom: none !important;
+				}
+			}
+		}
+	}
 
 
 }
@@ -2300,11 +2191,43 @@ h1{
 }
 
 .acces h2, .inscription h3, .listing h3, .selectionMap h3, .supplement h3, .historique h3{
-			font-size: 1.4em;
+			font-size: 1.8em;
 			font-weight: bold;
 			color: @noir;
 			margin-bottom: 10px;
 			margin: 0 0 10px 0;
 			font-family: 'Exo', sans-serif;
 			padding-top: 0;
+			clear: both;
 		}
+.forma{
+	h5 a{
+		color: #444444 !important;
+		border-bottom: 1px solid #444;
+		&:hover{
+			color: @orange;
+		}
+	}
+}
+input:focus{
+	border: 1px solid @bleu !important;
+}
+.illu{
+		border: none !important;
+		box-shadow: none !important;
+		float: right !important;
+		margin-left: 10px !important;
+		padding-bottom: 30px !important;
+	}
+	.forma{
+		h5{
+			clear: none;
+			font-size: 1.2em;
+		}
+		.date{
+			font-style: italic;
+		}
+	}
+h1{
+	display: none;
+}

@@ -11,11 +11,10 @@
         <meta name="viewport" content="width=device-width">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-        <link rel="stylesheet" href="../css/normalize.css">
         <link rel="stylesheet" href="../css/main.css">
         <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
         <link href='http://fonts.googleapis.com/css?family=Exo:400,800' rel='stylesheet' type='text/css'>
+        <script src="./js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -26,8 +25,9 @@
         <header class="page-header">
             <h1>Unité de logopédie de la Voix</h1>
             <nav>
+                <h2 class="cache">Menu de navigation</h2>
                 <ul>
-                    <h2 class="cache">Menu de navigation</h2>
+
                     <li><a href="../index.html">HOME</a></li>
                     <li><a href="./unite.html">UNITE</a></li>
                     <li><a href="./recherches.html">NOS RECHERCHES</a></li>
@@ -70,66 +70,49 @@
                 <div class="content">
                     <h2>Contact & accès</h2>
                     <div class="intro">
-                         <table summary="Personnes de contact">
-                            <tbody>
-                                <tr class="vcard">
-                                    <th class="org"><p><strong>Bureau facultaire</strong></th>
-                                    <td class="titre adr">
-                                        <p><span class="extended-address">Site universitaire du Sart Tilman&nbsp;, B38 </span><br><span class='streetaddress'>Rue de l’Aunaie&nbsp;, 30</span> <br><span class="postal-code">4000 </span><span class="locality">Sart Tilman</span></p>
-                                    </td>
-                                    <td class="mail email">
-                                        <p>Dominique.morsomme@ulg.ac.be</p>
-                                        <p>Pauline.larrouy@ulg.ac.be</p>
-                                        <p>Angelique.Remacle@ulg.ac.be</p>
 
-                                    </td>
-                                    <td class="telephone tel">
-                                        <p>Tel.: 04/366.51.76</p>
-                                        <p>Tel.: 04/366.58.62</p>
-                                        <p>Tel.: 04/366.58.62</p>
-                                    </td>
-                                </tr>
-                                <tr class="pair vcard">
-                                    <th  class="org"><p><strong>Secrétaire exécutive</strong> </th>
-                                    <td class="titre adr">
-                                        <p><span class="name">France Dartois,</span> <br><span class="streetaddress">Boulevard du Rectorat, 5 </span><br><span class="postal-code">4000 </span><span class="locality">Sart Tilman</span></p>
-                                    </td>
-                                    <td class="mail email">
-                                        <p>France.dartois@ulg.ac.be</p>
-                                    </td>
-                                    <td class="telephone tel">
-                                        <p>Tel.: 04/366.20.16</p>
-                                        <p>Fax: 04/366.28.59</p>
-                                    </td>
-                                </tr>
-                                <tr class="vcard">
-                                   <th class="org"><p><strong>Secrétaire</strong></th>
-                                    <td class="titre adr">
-                                        <p><span class="name">Nathalie Deprez,</span> <br> <span class="streetaddress">Boulevard du Rectorat,&nbsp; 5 </span><br><span class="postal-code">4000 </span><span class="locality">Sart Tilman</span></p>
-                                    </td>
-                                    <td class="mail email">
-                                        <p>ndeprez@ulg.ac.be</p>
-                                    </td>
-                                    <td class="telephone tel">
-                                        <p>Tel.: 04/366.91.17</p>
-                                        <p>Tel.: 04/366.20.26</p>
-                                    </td>
-                                </tr>
-                                <tr class="pair vcard">
-                                   <th class="org"><p><strong>Bureau CHU</strong></th>
-                                    <td class="titre adr">
-                                        <p><span class="extended-address">Hospitalier Liégeois,&nbsp;B35 </span><br><span class="streetaddress">Domaine du Sart Tilman </span><br><span class="postal-code">4000 </span><span class="locality">Sart Tilman</span></p>
-                                    </td>
-                                    <td class="mail email">
-                                        <p>Dominique.morsomme@ulg.ac.be</p>
-                                    </td>
-                                    <td class="telephone tel">
-                                        <p>Tel.: 04/366.75.26</p>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="vcard pg">
+                            <h3 class="org">Secrétaire exécutive</h3>
+                            <address class="titre adr">
+                                <p><span class="name">France Dartois,</span> <br><span class="streetaddress">Boulevard du Rectorat, 5 </span><br><span class="postal-code">4000 </span><span class="locality">Sart Tilman</span></p>
+                            </address>
 
+                            <p class="mail email">France.dartois@ulg.ac.be</p>
+                            <p class="telephone tel">Tel.: 04/366.51.76</p>
+                            <p class="telephone tel">Fax: 04/366.28.59</p>
+                        </div>
+                        <div class="vcard pg">
+                            <h3 class="org">Secrétaire</h3>
+                            <address class="titre adr">
+                                <p><span class="name">Nathalie Deprez,</span> <br> <span class="streetaddress">Boulevard du Rectorat,&nbsp; 5 </span><br><span class="postal-code">4000 </span><span class="locality">Sart Tilman</span></p>
+                            </address>
+
+                            <p class="mail email">ndeprez@ulg.ac.be</p>
+                            <p class="telephone tel">Tel.: 04/366.91.17</p>
+                            <p class="telephone tel">Tel.: 04/366.20.26</p>
+                        </div>
+                        <div class="vcard pg">
+                            <h3 class="org">Bureau CHU</h3>
+                            <address class="titre adr">
+                                <p><span class="extended-address">Hospitalier Liégeois,&nbsp;B35 </span><br><span class="streetaddress">Domaine du Sart Tilman </span><br><span class="postal-code">4000 </span><span class="locality">Sart Tilman</span></p>
+                            </address>
+
+                            <p class="mail email">Dominique.morsomme@ulg.ac.be</p>
+                            <p class="telephone tel">Tel.: 04/366.75.26</p>
+                        </div>
+                        <div class="vcard pg">
+                            <h3 class="org">Bureau facultaire</h3>
+                            <address class="titre adr">
+                                <p><span class="extended-address">Site universitaire du Sart Tilman&nbsp;, B38 </span><br><span class='streetaddress'>Rue de l’Aunaie&nbsp;, 30</span> <br><span class="postal-code">4000 </span><span class="locality">Sart Tilman</span></p>
+                            </address>
+
+                            <p class="mail email">Dominique.morsomme@ulg.ac.be</p>
+                            <p class="telephone tel">Tel.: 04/366.51.76</p>
+                            <p class="mail email">Pauline.larrouy@ulg.ac.be</p>
+                            <p class="telephone tel">Tel.: 04/366.58.62</p>
+                            <p class="mail email">Angelique.Remacle@ulg.ac.be</p>
+                            <p class="telephone tel">Tel.: 04/366.58.62</p>
+                        </div>
                     </div>
                     <div class="acces">
                         <h2>Accès Sart-Tilman</h2>
@@ -157,25 +140,17 @@
                                 <li>Au feu, suivre la direction Université de Liège&nbsp;-&nbsp;Sart Tilman.</li>
                             </ul>
                         <h5>En train et en bus</h5>
-                           <p>
-                                Si vous venez au Sart Tilman en train, vous devez descendre à la gare <strong>Liège-Guillemins</strong>. L'arrêt de bus de la ligne <strong>48</strong> se situe juste devant la gare. Prenez la direction CHU. Le trajet dure une vingtaine de minutes et les passages sont fréquents. Descendez à l'arrêt "Grands Amphithéâtres".
-
-                                Une ligne express, la 58, relie le centre ville au Sart Tilman, descendre à l'arrêt &laquo;Institut de Chimie&raquo;
-
-                                Pour plus de renseignements sur les lignes et les horaires des bus, consultez le site du <a href="http://www.infotec.be/index.aspx?PageId=632169341538437500" title="Lien 2">TEC</a>
-
-                                Pour plus de renseignements sur les horaires des trains, consultez le site de la <a href="http://www.b-rail.be/nat/F/" title="Lien 2">SNCB.</a>
-                            </p>
+                        <div class="loco">
+                            <img src="../img/tec.jpg" alt="">
+                            Accès en Bus par la ligne 48 au départ du centre de liège. Descendez à l'arrêt "Grands Amphithéâtres".
+                            <p class="infos">Plus d'informations sur les bus: <a href="http://www.infotec.be"> Site de la TEC</a></p>
+                        </div>
+                        <div class="loco">
+                            <img src="../img/sncb.jpg" alt="">
+                            Accès en train en descendant à la gare de Lège Guillemins
+                            <p class="infos">Plus d'informations sur les trains: <a href="http://www.b-rail.be/"> Site de la SNCB</a></p>
+                        </div>
                     </div>
-                    <aside class="formaLien">
-                        <h4 class="map">Plan</h4>
-                        <div id="gmap"></div>
-
-                    </aside>
-
-
-
-
                 </div>
             </section>
         </div>
@@ -204,19 +179,13 @@
                     </address>
                 </section>
 
-                <section class="logos">
-                    <h4><img src="./img/logoReduit.png" alt="ULG"></h4>
-                    <h4><img src="./img/ulg2.png" alt="ULV"></h4>
+               <section class="logos">
+                    <h4><img src="./img/logoReduit.png" width="152" height="120" alt="ULG"></h4>
+                    <h4><img src="./img/ulg2.png" width="150" height="109" alt="ULV"></h4>
                 </section>
 
             </div>
             <div class="copyr">&copy; Tous droits réservés</div>
         </footer>
-        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
-        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
-        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDHJ3p-sn1Y5tJGrzH9MF5cbR5sdsDmhfg&sensor=false"></script>
-        <script src="../js/main.js"></script>
-
-
     </body>
 </html>
